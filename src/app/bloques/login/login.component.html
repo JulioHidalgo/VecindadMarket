@@ -1,0 +1,125 @@
+
+    <ion-app>
+        <ion-menu contentId="main-content">
+          <ion-header>
+            <ion-toolbar color="dark">
+                <ion-buttons slot="start">
+                    <ion-menu-button><ion-icon name="menu-outline"></ion-icon></ion-menu-button>
+                  </ion-buttons>
+              <ion-title>Menu</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <ion-item routerLink="/inicio" routerDirection="root">
+                <ion-icon slot="start" name="home-outline"></ion-icon> 
+                <ion-label>Home</ion-label>
+            </ion-item>
+            <ion-item routerLink="/login" routerDirection="root" id="open-modal" expand="block">
+              <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+              <ion-label>Login</ion-label>
+          </ion-item>
+          <ion-item routerLink="/shop" routerDirection="root">
+            <ion-icon slot="start" name="storefront-outline"></ion-icon>
+            <ion-label>Ventas</ion-label>
+        </ion-item>
+        <ion-item routerLink="/pedidos" routerDirection="root">
+          <ion-icon slot="start" name="cart-outline"></ion-icon>
+          <ion-label>Pedidos</ion-label>
+      </ion-item>
+      <ion-item routerLink="/anuncios" routerDirection="root">
+        <ion-icon slot="start" name="calendar-outline"></ion-icon>
+        <ion-label>Avisos</ion-label>
+    </ion-item>
+    <ion-item routerLink="/photos" routerDirection="root">
+      <ion-icon slot="start" name="images-outline"></ion-icon>
+      <ion-label>Galeria</ion-label>
+    </ion-item>
+    <ion-item routerLink="/contacto" routerDirection="root">
+      <ion-icon slot="start" name="logo-whatsapp"></ion-icon>
+      <ion-label>Contacto</ion-label>
+    </ion-item>
+    <ion-item routerLink="/mensajes" routerDirection="root">
+      <ion-icon slot="start" name="mail-outline"></ion-icon>
+      <ion-label>Mensajes</ion-label>
+    </ion-item>
+          </ion-content>
+        </ion-menu>
+        <div class="ion-page" id="main-content"> 
+          <ion-header>
+            <ion-toolbar color="dark">
+              <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>VECINDAD MARKET</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding" id="background-content">
+                <div class="content-block-login popup-login">
+                  <h4>LOGIN</h4>
+                        <div class="loginform">
+                            <form id="LoginForm" method="post">
+                            <div class="form_row">
+                            <!-- <div class="form_row_icon"><img src="assets/images/icons/blue/user.png" alt="" title="" /></div> -->
+                            <ion-item>
+                            <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+                            <!-- <input type="text" name="Usuario" value="" class="form_input required" placeholder="usuario" /> -->
+                            <ion-label position="stacked" class="usuario">Ingresa tu usuario</ion-label>
+                            <ion-input type="text" placeholder="Tu Usuario"></ion-input>
+                          </ion-item>
+                            <!-- <ion-content class="ion-padding">
+                              <ion-item>
+                                <ion-label position="stacked">Ingresa tu usuario</ion-label>
+                                <ion-input type="text" placeholder="Tu Usuario"></ion-input>
+                              </ion-item>
+                            </ion-content> -->
+                            </div>
+                            <div class="form_row">
+                            <div class="form_row_icon"><img src="assets/images/icons/blue/lock.png" alt="" title="" /></div>
+                            <input type="password" name="Contraseña" value="" class="form_input required" placeholder="contraseña" />
+                            </div>
+                            <div class="forgot_pass"><a href="#" data-popup=".popup-forgot" class="open-popup">Olvidaste tu contraseña?</a></div>
+                            <input type="submit" name="submit" class="form_submit" id="submit" value="INICIAR SESIÓN" />
+                            </form>
+                            <div class="signup_social">
+                            <a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
+                            <a href="http://www.instagram.com/" class="signup_instagram external">INSTAGRAM</a>                </div>
+                            <div class="signup_bottom">
+                            <p>No tienes una cuenta ?</p>
+                            <a href="#" data-popup=".popup-signup" class="open-popup">INCRIBIRSE</a>                </div>
+                        </div>
+                  <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
+                </div>
+          </ion-content>
+        </div>
+    </ion-app>
+
+    <!-- <ion-header>
+      <ion-toolbar>
+        <ion-title>Inline Modal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button id="open-modal" expand="block">Open</ion-button>
+      <p>{{ message }}</p>
+      <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-buttons slot="start">
+                <ion-button (click)="cancel()">Cancel</ion-button>
+              </ion-buttons>
+              <ion-title>Welcome</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label position="stacked">Enter your name</ion-label>
+              <ion-input type="text" placeholder="Your name" [(ngModel)]="name"></ion-input>
+            </ion-item>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </ion-content> -->

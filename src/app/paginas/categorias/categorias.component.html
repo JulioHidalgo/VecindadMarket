@@ -1,0 +1,74 @@
+<ion-app>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="dark">
+            <ion-buttons slot="start">
+                <ion-menu-button><ion-icon name="menu-outline"></ion-icon></ion-menu-button>
+              </ion-buttons>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-item routerLink="/inicio" routerDirection="root">
+            <ion-icon slot="start" name="home-outline"></ion-icon> 
+            <ion-label>Home</ion-label>
+        </ion-item>
+        <ion-item routerLink="/login" routerDirection="root">
+          <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+          <ion-label>Login</ion-label>
+      </ion-item>
+      <ion-item routerLink="/shop" routerDirection="root">
+        <ion-icon slot="start" name="storefront-outline"></ion-icon>
+        <ion-label>Ventas</ion-label>
+    </ion-item>
+    <ion-item routerLink="/pedidos" routerDirection="root">
+      <ion-icon slot="start" name="cart-outline"></ion-icon>
+      <ion-label>Pedidos</ion-label>
+  </ion-item>
+  <ion-item routerLink="/anuncios" routerDirection="root">
+    <ion-icon slot="start" name="calendar-outline"></ion-icon>
+    <ion-label>Avisos</ion-label>
+</ion-item>
+<ion-item routerLink="/photos" routerDirection="root">
+  <ion-icon slot="start" name="images-outline"></ion-icon>
+  <ion-label>Galeria</ion-label>
+</ion-item>
+<ion-item routerLink="/contacto" routerDirection="root">
+  <ion-icon slot="start" name="logo-whatsapp"></ion-icon>
+  <ion-label>Contacto</ion-label>
+</ion-item>
+<ion-item routerLink="/mensajes" routerDirection="root">
+  <ion-icon slot="start" name="mail-outline"></ion-icon>
+  <ion-label>Mensajes</ion-label>
+</ion-item>
+      </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content"> 
+      <ion-header>
+        <ion-toolbar color="dark">
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Galeria</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding"> 
+        <div class="popup popup-shopcategories">
+          <div class="content-block">
+            <h4>CATEGORIAS</h4>
+            <ul class="popup_categories">
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/bike.png" alt="" title="" /><span>BICICLETAS</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/car.png" alt="" title="" /><span>AUTOS</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/rocket.png" alt="" title="" /><span>JUGUETES</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/orders.png" alt="" title="" /><span>ROPA</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/food.png" alt="" title="" /><span>COMIDA</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/drink.png" alt="" title="" /><span>TRAGOS</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/photos.png" alt="" title="" /><span>VARIOS</span></a></li>
+            <li><a href="shop-page2.html" class="close-popup"><img src="assets/images/icons/blue/electronics.png" alt="" title="" /><span>ELECTRODOMÉSTICOS</span></a></li>
+            </ul>
+            <div class="close_popup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
+          </div>
+        </div>
+      </ion-content>
+    </div>
+</ion-app>
